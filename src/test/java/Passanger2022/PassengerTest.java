@@ -18,9 +18,10 @@ class PassengerTest {
     void testTitleMr(){
         myPassenger.setTitle("Mr");
         assertEquals("Mr", myPassenger.getTitle());
+
     }
 
-    @Test
+   @Test
     void testTitleMrs(){
         myPassenger.setTitle("Mrs");
         assertEquals("Mrs", myPassenger.getTitle());
@@ -33,9 +34,9 @@ class PassengerTest {
     }
 
     @Test
-    void testTitleWrong(){
-        myPassenger.setTitle("xyz");
-        assertEquals("Mr", myPassenger.getTitle());
+    void testTitleFail(){
+        Exception exMessage = assertThrows(IllegalArgumentException.class, () -> { myPassenger.setTitle("xyz");});
+        assertEquals("Incorrect Title. Please enter 'Mr', 'Mrs', or 'Ms'.", exMessage.getMessage());
     }
 
     @AfterEach
