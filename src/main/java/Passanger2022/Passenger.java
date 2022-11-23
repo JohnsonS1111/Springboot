@@ -2,27 +2,27 @@ package Passanger2022;
 import java.util.ArrayList;
 
 public class Passenger {
-    private String Title;
-    private String Name;
-    private String ID;
-    private String Phone;
+    private String title;
+    private String name;
+    private String id;
+    private String phone;
     private int age;
 
-    public Passenger(String Title, String Name, String ID, String Phone, int age){
-        this.Title = Title;
-        this.Name = Name;
-        this.ID = ID;
-        this.Phone = Phone;
+    public Passenger(String title, String name, String id, String phone, int age){
+        this.title = title;
+        this.name = name;
+        this.id = id;
+        this.phone = phone;
         this.age = age;
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
         if (title == "Mr" || title == "Mrs" || title == "Ms"){
-            Title = title;
+            this.title = title;
         }
 
         else{
@@ -31,12 +31,12 @@ public class Passenger {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
         if(name.length() >= 3){
-            Name = name;
+            name = name;
         }
 
         else{
@@ -45,12 +45,12 @@ public class Passenger {
     }
 
     public String getID() {
-        return ID;
+        return id;
     }
 
     public void setID(String id) {
         if(id.length() >= 10){
-            this.ID = id;
+            this.id = id;
         }
 
         else{
@@ -59,12 +59,12 @@ public class Passenger {
     }
 
     public String getPhone() {
-        return Phone;
+        return phone;
     }
 
     public void setPhone(String phone) {
         if(phone.length() >= 7){
-            this.Phone = phone;
+            this.phone = phone;
         }
 
         else{
@@ -86,3 +86,4 @@ public class Passenger {
         }
     }
 }
+ 
