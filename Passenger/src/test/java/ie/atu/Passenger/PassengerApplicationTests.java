@@ -1,4 +1,4 @@
-package ie.atu.Passenger;
+/*package ie.atu.Passenger;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,4 +10,4 @@ class PassengerApplicationTests {
 	void contextLoads() {
 	}
 
-}
+}*/

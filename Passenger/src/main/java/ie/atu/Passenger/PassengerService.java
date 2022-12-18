@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import java.util.List;
+/*import java.util.List;
 
 @Service
 public class PassengerService {
@@ -22,4 +22,4 @@ public class PassengerService {
         Passenger myPassenger = new Passenger("Mr", "Johnson", "ABC123", "234", 12);
         return myPassenger;
     }
-}
+}*/
