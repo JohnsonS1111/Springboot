@@ -38,7 +38,7 @@ public class Passenger {
         if(name.length() >= 3){
             name = name;
         }
-
+//
         else{
             throw new IllegalArgumentException("Incorrect Entry, Name must contain at least 3 characters");
         }

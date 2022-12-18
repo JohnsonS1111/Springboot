@@ -21,6 +21,7 @@ class PassengerTest {
         myPassenger.setTitle("Ms");
         assertEquals("Ms", myPassenger.getTitle());
     }
+    //
     @Test
     void testName(){assertEquals("Zachary", myPassenger.getName());}
     @Test
