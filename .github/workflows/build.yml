@@ -1,5 +1,4 @@
 name: PASS
-
 on:
   pull_request:
     branches: [master]
